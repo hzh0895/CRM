@@ -9,4 +9,5 @@
     <string name="form">报表</string>
     <string name="contact">联系人</string>
     <string name="product">产品</string>
+    <string name="no_content">暂无内容</string>
 </resources>

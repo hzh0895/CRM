@@ -9,13 +9,39 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".main.activity.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".customer.activity.CustomerActivity"
+            android:label="@string/title_activity_customer" />
+        <activity
+            android:name=".business.activity.BusinessActivity"
+            android:label="@string/title_activity_business" />
+
+        <activity android:name=".contract.activity.ContractActivity"
+            android:label="@string/title_activity_contract"/>
+
+        <activity android:name=".contact.activity.ContactActivity"
+            android:label="@string/title_activity_contact"/>
+
+        <activity android:name=".form.activity.FormActivity"
+            android:label="@string/title_activity_form"/>
+
+        <activity android:name=".product.activity.ProductActivity"
+            android:label="@string/title_activity_product"/>
+
+        <activity android:name=".remind.activity.RemindActivity"
+            android:label="@string/title_activity_remind"/>
+
+        <activity android:name=".target.activity.TargetActivity"
+            android:label="@string/title_activity_target"/>
+
     </application>
 
 </manifest>
