@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="title_activity_contact">联系人列表</string>
+    <string name="prompt_all_contact">全部联系人</string>
+    <string name="prompt_my_contact">我的联系人</string>
 </resources>
