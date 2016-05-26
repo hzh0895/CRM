@@ -1,11 +1,9 @@
 package com.example.showjoy.crm.main.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,11 +14,14 @@ import com.example.showjoy.crm.contact.activity.ContactActivity;
 import com.example.showjoy.crm.contract.activity.ContractActivity;
 import com.example.showjoy.crm.customer.activity.CustomerActivity;
 import com.example.showjoy.crm.form.activity.FormActivity;
+import com.example.showjoy.crm.login.activity.LoginActivity;
 import com.example.showjoy.crm.product.activity.ProductActivity;
 import com.example.showjoy.crm.remind.activity.RemindActivity;
 import com.example.showjoy.crm.target.activity.TargetActivity;
+import com.example.showjoy.crm.util.ActivityCollector;
+import com.example.showjoy.crm.util.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private View customerLayout;
     private View businessLayout;
     private View contractLayout;
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     private View formLayout;
     private View contactLayout;
     private View productLayout;
+
+    public static void activityStart(Context context) {
+        Intent intent = new Intent(context, MainActivity.class);
+        context.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,7 +148,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_log_out) {
+            LoginActivity.activityStart(MainActivity.this);
+            ActivityCollector.finishAll();
             return true;
         }
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="head_title_font">18sp</dimen>
+    <dimen name="over_title_font">16sp</dimen>
+    <dimen name="title_font">15sp</dimen>
+    <dimen name="normal_font">14sp</dimen>
+    <dimen name="sub_normal_font">13sp</dimen>
+    <dimen name="small_font">11sp</dimen>
+    <dimen name="big_font">22sp</dimen>
+    <dimen name="value_font">55sp</dimen>
+    <dimen name="rate_font">60sp</dimen>
+</resources>
