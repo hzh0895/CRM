@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.showjoy.crm.R;
+import com.example.showjoy.crm.util.BaseActivity;
 
-public class ContractActivity extends AppCompatActivity {
+public class ContractActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
